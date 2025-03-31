@@ -4,7 +4,7 @@ import java.io.File;
 import java.io.IOException;
 
 /**
- * Modifica el ejercicio 3 para que la salida estándar se guarde en un archivo output.txt
+ * Modifica el ejercicio ProcessBuilder.java para que la salida estándar se guarde en un archivo output.txt
  */
 
 public class ProccessBuilderToFile {
