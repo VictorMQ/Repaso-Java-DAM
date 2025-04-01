@@ -1,13 +1,12 @@
 package org.victor.ProccessBuilder;
 
-import java.io.File;
-import java.io.IOException;
+import java.io.*;
 
 /**
- * Modifica el ejercicio ProcessBuilder.java para que la salida estándar se guarde en un archivo output.txt
+ * Modifica el ejercicio 3 para que la salida estándar se guarde en un archivo output.txt
  */
 
-public class ProccessBuilderToFile {
+public class ProcessBuilderOutput {
     public static void main(String[] args) {
 
         try {
@@ -24,6 +23,7 @@ public class ProccessBuilderToFile {
 
             ProcessBuilder pb = new ProcessBuilder(comando.split(" "));
 
+            //Salida redirigida
             pb.redirectOutput(new File("output.txt"));
 
             Process process = pb.start();
