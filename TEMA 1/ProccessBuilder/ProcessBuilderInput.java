@@ -25,13 +25,14 @@ public class ProcessBuilderInput {
 
             Process process = pb.start();
 
-
+            //Entrada estandar (stdin)
             BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(process.getOutputStream()));
 
             bw.write("Hola desde Java\n");
+            bw.flush();
             bw.close();
 
-
+            //Salida estandar (stdout)
             BufferedReader br = new BufferedReader(new InputStreamReader(process.getInputStream()));
 
             String linea;
