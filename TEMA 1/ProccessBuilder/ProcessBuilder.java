@@ -8,7 +8,7 @@ import java.io.InputStreamReader;
  * Usa ProcessBuilder para ejecutar el mismo comando del ejercicio 1
  */
 
-public class ProccessBuilder {
+public class ProcessBuilder {
 
     public static void main(String[] args){
 
