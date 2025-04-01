@@ -26,8 +26,6 @@ public class ProcessBuilder {
 
             ProcessBuilder pb = new ProcessBuilder(comando.split(" "));
 
-            //pb.redirectErrorStream(true);
-
             Process process = pb.start();
 
 
